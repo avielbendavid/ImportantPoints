@@ -2,7 +2,9 @@ package threads;
 
 public class MyThread extends Thread {
 
-	// extends is NOT available anymore
+	// ADVANTAGES : we have access to all Thread methods
+	// DISADVANTAGES : extends is NOT available anymore
+	
 
 	public MyThread(String name) {
 		super(name);

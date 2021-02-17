@@ -4,9 +4,10 @@ public class MyRunnable implements Runnable {
 
 	// extends is still available - in this technique -
 	// not like the other technique :
-	// (class that extends from 'Thread' class - extends is not available)
+	// (class that extends from 'Thread' -> extends is not available)
 	// ADVANTAGES : extends is still available 
-	// DISADVANTAGES : we do not have the reference to the current thread,
+	// DISADVANTAGES : we do not have the reference to the current thread
+	// *** WORKAROUND ***
 	// if we want to get access to this thread - we need to get the reference 
 	// from the Thread.currentThread() static method
 	
