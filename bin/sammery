@@ -7,7 +7,7 @@
            |  `--'  |  /  _____  \     \    /     /  _____  \  
             \______/  /__/     \__\     \__/     /__/     \__\
 
-
+Write once- run everywhere
 ****************************************************************   
 
                          JAVA is a Framework for application development
@@ -27,31 +27,45 @@
 רצה על המחשב-שהוא לא מכונה וירטואלית , הוא ממש מכונה אבל היא רצה באיזה שהוא תיווך שנקרא מכונה וירטואלית - JAVA
 זה מה שנותן בעצם את תכונת הפרוטביליות- את העובדה שהיא יכולה לרוץ על כל פלטפורמה על כל מערכת הפעלה בכל גרסא שהיא 
 
+--- JVM
+  JVM - רכיב שלא מיועד למתכנתים - מיועד לכל מי שמריץ, שזה בעצם כמעט כולם
+  how to check if we have the JVM installed on the specified machine?
+  run on the command line: 
+  c:/>java -version  
+  if you see an output - JVM is installed
+  
+--- JAVA - Web Compatibility  
 
----JAVA - an exception handling mechanism that improves bugs handling
+--- JAVA - an exception handling mechanism that improves bugs handling
 
 
----JAVA - Strongly typed - הכוונה שלכל פיסת מידע שכותבים יש סוג , הדבר הזה לא נכון לכל שפות התכנות
+--- JAVA - Strongly typed - הכוונה שלכל פיסת מידע שכותבים יש סוג , הדבר הזה לא נכון לכל שפות התכנות
 
 
----JAVA - Pure object oriented 
+--- JAVA - Pure object oriented 
 OBJECT ORIENTED PROGRAMMING תומכת חזק בפרדיגמה תכנותית שנקראת 
 
 
 
----JAVA - has garbage collector (gc)
+--- JAVA - has garbage collector (gc)
   garbage collector   מי שמנהל את הזיכרון זה תהליך שרץ במקביל לתוכנית שלנו - לתהלית הזה קוראים
 והוא כל הזמן מנטר את מצב הזיכרון ואם יש אובייקטים שאפשר לנקות מהזיכרון והמתכנת יכול להתעסק עם מה שמעניין אותו באמת
 
 
 
----JAVA - Multi threaded language -כמו הרבה שפות תכנות אחרות יכולה להריץ כמה דברים במקביל , כל תוכנית מודרנית עושה יותר מדבר אחד בכל רגע נתון 
+--- JAVA - Multi threaded language -כמו הרבה שפות תכנות אחרות יכולה להריץ כמה דברים במקביל , כל תוכנית מודרנית עושה יותר מדבר אחד בכל רגע נתון 
        Thread   כל תהליך כזה נקרא
 
 
----JAVA is a case sensitive language
+--- JAVA is a case sensitive language
 
 
+ *** MEMORY MANAGEMENT ***
+    Objects created on the heap memory using the new keyword
+    The heap tends to be fragmented from time to time
+    Objects are stored in the heap memory 
+    heap memory - A place in memory where the active objects are stored
+    stack memory - local variables are stored in stack memory
 
 
 
