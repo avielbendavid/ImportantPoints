@@ -1,0 +1,59 @@
+****************************************************************         
+                
+                  __       ___      ____    ____      ___      
+                 |  |     /   \     \   \  /   /     /   \     
+                 |  |    /  ^  \     \   \/   /     /  ^  \    
+           .--.  |  |   /  /_\  \     \      /     /  /_\  \   
+           |  `--'  |  /  _____  \     \    /     /  _____  \  
+            \______/  /__/     \__\     \__/     /__/     \__\
+
+
+****************************************************************   
+
+                         JAVA is a Framework for application development
+
+--- JAVA code is a portable : Java executables would run on all operating systems
+
+               java יעבדו בכל פלטפורמה ובכל גרסא כל עוד מותקת עליהם java כל מערכת הפעלה - המוצרים של
+ 
+
+
+--- JAVA has a rich library support
+
+              *************** JSE- java standard edition   ***************
+              *************** JEE- java enterprise edition ***************
+              
+--- JVM - Java Virtual Machine (machine - computer) :
+רצה על המחשב-שהוא לא מכונה וירטואלית , הוא ממש מכונה אבל היא רצה באיזה שהוא תיווך שנקרא מכונה וירטואלית - JAVA
+זה מה שנותן בעצם את תכונת הפרוטביליות- את העובדה שהיא יכולה לרוץ על כל פלטפורמה על כל מערכת הפעלה בכל גרסא שהיא 
+
+
+---JAVA - an exception handling mechanism that improves bugs handling
+
+
+---JAVA - Strongly typed - הכוונה שלכל פיסת מידע שכותבים יש סוג , הדבר הזה לא נכון לכל שפות התכנות
+
+
+---JAVA - Pure object oriented 
+OBJECT ORIENTED PROGRAMMING תומכת חזק בפרדיגמה תכנותית שנקראת 
+
+
+
+---JAVA - has garbage collector (gc)
+  garbage collector   מי שמנהל את הזיכרון זה תהליך שרץ במקביל לתוכנית שלנו - לתהלית הזה קוראים
+והוא כל הזמן מנטר את מצב הזיכרון ואם יש אובייקטים שאפשר לנקות מהזיכרון והמתכנת יכול להתעסק עם מה שמעניין אותו באמת
+
+
+
+---JAVA - Multi threaded language -כמו הרבה שפות תכנות אחרות יכולה להריץ כמה דברים במקביל , כל תוכנית מודרנית עושה יותר מדבר אחד בכל רגע נתון 
+       Thread   כל תהליך כזה נקרא
+
+
+---JAVA is a case sensitive language
+
+
+
+
+
+
+
