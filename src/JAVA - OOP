@@ -1,0 +1,44 @@
+
+The most 3 basic principles in OOP :
+
+   1.Encapsulation
+   2.Inheritance
+   3.Polymorphism
+   
+   
+   
+   Encapsulation - is the idea of putting something inside a capsule.
+   example in the real world - TV - has an interface > the buttons :
+   we want that the user will have an access only to the interface and not to the inside electric system of the TV.
+   why? because it is not a part that we want to give an access to the user - maybe it is have an electric danger.
+   so we will give the user an interface that the user can use to deal with the tv.
+   the second reason is that the interface is very clear to the user and the user than can very easly deal with the tv.
+   in programming - we can encapsulate object's attributes that we want to block access to (example :private access modifier)
+   the access to the object attributes will be through methods.(example : get & set)	   
+    
+	  עקרון ההסתרה -   הסתרת השדות שמכילים מידע רגיש וחשיפת חלק מהם באמצעות פונקציות שבודקות האם ניתן לבצע את הפעולה או לא-עקרון ההסתרה
+	
+	
+	
+	
+	
+	  
+   Inheritance - is the idea of defining an entity based on an existing entity and extending it (adding more features to it)
+	  
+	 - An "IS A" relationship (such as Circle is a Shape)
+	  
+	 - A derived (inheriting) class is actually its ancestor plus additional data and/or functionality
+	  
+	 - Inheritance enables us to change simultaneously the basic structure of several different entities
+	  
+   רעיון ההורשה - האפשרות להגדיר תתי מחלקות שמרחיבות את הגדרת הבסיס במחלקת האב - הסופר
+   ככה מונעים שכפול של קוד , הקוד הבסיסי שמשותף לכולם כתוב במקום אחד וגם מרוויחים קלות בתחזוקה. כל תיקון במחלקת הסופר מיד עובר בהורשה למחלקות היורשות 
+   
+   
+   
+   
+   
+   
+   פולימורפיזם- אפשרות להסתכל על אובייקט מנקודות מבט שונות.
+   בתכנות האפשרות להחזיק רפרנס מסוג גבוה בסולם ההורשה למשל מכונית , שהיא איזה שהוא סופר קלאס, לאובייקט מסוג נמוך יותר, כלומר משוכלל יותר,מה שנמוך יותר הוא הרחבה של הסופר קלאס,נמוך יותר
+   משוכלל יותר , למשל מכונית מרוץ.הרפרנס קובע איך נשתמש באובייקט-כלומר איזה פונקציות נוכל להפעיל.לעומת זאת האובייקט עצמו קובע איך הפונקציות פועלות.האלגוריטם של הפונקציות נמצא באובייקט.מרגע שהפעלתי פונקציה היא פועלת כפי שהוגדרה עבור האובייקט הזה

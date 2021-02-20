@@ -1,0 +1,28 @@
+class definition:
+
+public class Person{     // Person is the Type => name of the class
+
+  // class members,attributes,fields
+  
+    private int id;        
+    private String name;
+    private int gae;
+
+  //	CTOR - is a method 
+  //    CTOR - a special methods for object creation
+  // methods have name, the CTOR method is identified by name
+  // by name of the class - in this case - Person
+  // the CTOR name is always the name of the class
+  // CTOR can get parameters
+  
+  
+  // this - is the reference to the object!!		
+  // this.id - the id of the object
+  // id - is local id
+  		
+	public Person(int id){
+	this.id=id;
+	}
+
+
+}
