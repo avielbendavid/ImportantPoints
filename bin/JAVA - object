@@ -24,5 +24,8 @@ public class Person{     // Person is the Type => name of the class
 	this.id=id;
 	}
 
-
+  // GETTERS & SETTERS 
+  // use a get method to get the value of a private attribute
+  // use a set method to set the value of a private attribute
+   
 }

@@ -1,0 +1,39 @@
+Complex Types:  מילים שמורות שעוסקות בהגדרה של סוג,"משתנה מורכב",אובייקט"
+1.class [can be abstract,static,final]
+2.interface
+3.enum
+
+********************************************************************************
+
+modifiers : give some behavior
+
+
+ access modifiers : visibility
+ 1.public
+ 2.protected
+ 3.private
+ 4.default (when not specifying an access modifier) - package private
+
+
+
+
+
+ 1.final - fix a value,method or class - מקבע משהו
+ 2.static - make class member - נותן תכונה של שייכות לקלאס ולא למופע של הקלאס , שייך לקלאס ולא לאובייקט
+ההפך מסטטי זה דינאמי-שייך לאובייקט      
+ 3.abstract - make method or class abstract - מוריד ממנו את המימוש
+ abstract - without full implementation
+
+********************************************************************************
+מה זה קלאס סטטי ? קלאס שמקונן בתוך קלאס אחר אבל לא תלוי במופע של הקלאס האחר 
+קלאס לא יכול להיות סטטי אלא אם כן הוא מקונן 
+
+קלאס שמקונן בקלאס נוסף והוא לא סטטי נקרא - inner class
+וקלאס שמקונן בקלאס נוסף אבל הקלאס המקונן הוא סטטי הוא נקרא - nested class 
+
+                 
+                 
+                 
+                 
+                 
+                 
