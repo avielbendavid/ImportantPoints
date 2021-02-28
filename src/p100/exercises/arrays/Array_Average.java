@@ -1,6 +1,6 @@
 package p100.exercises.arrays;
 
-public class Exercise3_Average_array {
+public class Array_Average {
 
 	public static void main(String[] args) {
 		int[] arr1 = { 5, 7, 5, 89, 14, 222, 1452148, 587, 45, 362 };

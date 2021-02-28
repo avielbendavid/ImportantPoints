@@ -1,0 +1,53 @@
+applicationContext.xml - this file is inform the spring context what beans it will have.
+ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml"); 
+
+
+**************************** XML ****************************
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+</beans> 
+
+*************************************************************
+
+
+Spring Bean - An object that is managed by Spring Context.
+
+@component -  Making a *class* so as to tell Spring to create and manage from that class, one bean(in case of singleton) or many beans (in case of prototype).
+סימון ששמים על מחלקה שאנחנו רוצים שספרינג תייצר ממנה  בין או כמה בינים
+
+@Bean - making a factory method so as to tell Spring to create and manage from that class, one bean(in case of singleton) or many beans (in case of prototype).
+
+@Autowired - סימון של
+• שדה
+• פרמטר בבנאי
+• פרמטר במתודה
+ ככזה שנרצה ש spring תזריק )תבצע אליו השמה( מתוך מאגר ה beans שלרשותה. מציאת ההתאמה
+לפי סדר החיפוש הבא:
+1 .type – אם יש bean אחת בלבד מה type המתאים אז זאת התאמה. אם אין בכלל, נזרקת
+שגיאה,אם יש יותר עוברים ל 2
+2 .qualifier – אם נמצא qualifier שאומר באיזו מבין כלל ה bean הקיימות לבחור אז זאת
+התאמה, אחרת עוברים ל 3
+3 .name – אם שם השדה או הפרמטר תואמים לשם של bean כלשהי והסוג מתאים אז זאת
+התאמה. אחרת נזרקת שגיאה.
+
+@Value - סימון שדה או פרמטר בבנאי או פרמטר במתודה שהם פרימיטיבים או סטרינג , ככזה שנרצה שפרינג תזריק - תבצי אלי השמה , מתוך ערך שנמסור לה כטקסט - בדרך כלל מתוך קובץ פרופרטיז
+
+
+Spring Boot - no more deal with pom xml file!
+Spring boot - הרחבה של ספרינג שמקלה על המתכנת בכל העיניינים של הקונפיגורציות
+כשיוצרים פרוייקט ספרינג בוט אז הוא כבר מגיע עם כל הדיפנדנדסיס של ספרינג קור, אבל אם רוצים דיפנדנסיס נוספים אז מוסיפים אותם בזמן יצירת הפרוייקט
+כל הדיפנדנסיס מותאמים מבחינת הגירסאות - ספרינג אינישיאלייזר יביא את הפום אקסאמל עם כל הדיפנדנסיס שצריך-חבילות לכל דבר בלי שום בעיה
+קובץ הזיפ שיורד זה בעצם המייבן פרוגאקט
+בפום אקאמאל יש כבר חבילות מוכנות 
+spring boot starter - the core of spring and also some things spring boot needs for configuration
+Maven-plug-in - we need it for the time we will want to send someone the project, to export the project in jar file
+
+the Application class - @SringBootApplication - 
+this class is a of two things we do until now , AppConfig - the configuration class , and the main method. 
