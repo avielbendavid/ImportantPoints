@@ -1,4 +1,4 @@
-package p100.exercises.arrays;
+package p900.exercises.arrays;
 
 import java.util.Scanner;
 

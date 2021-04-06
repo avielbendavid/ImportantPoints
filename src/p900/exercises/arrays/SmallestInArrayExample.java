@@ -1,4 +1,4 @@
-package p100.exercises.arrays;
+package p900.exercises.arrays;
 
 public class SmallestInArrayExample {
 	public static void main(String[] args) {
