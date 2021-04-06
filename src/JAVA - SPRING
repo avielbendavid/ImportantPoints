@@ -1,3 +1,30 @@
+ספרינג זו בעצם תשתית שעוזרת לנו ליצור אובייקטים בצורה מאוד מתוחכמת במיוחד ל אפליקציות דפדפן.
+ספרינג זו תשתית שכתובה בשפת ג'אוה בשביל פיתוח אפליקציות בג'אוה.
+וכבר בפנים כוללת כל מני 
+design patterns וצורות נכונות של כתיבה של הקוד באופן שיוריד מהמתכנת הרבה מהעומס
+
+
+*******************
+Dependencies - תלויות
+helper class - נקרא גם
+קלאס אחד שמוכל בתוף קלאס אחר,אובייקט אחד שמוכל בתוך אובייקט אחר
+*******************
+
+
+הדבר העיקרי והבסיסי ביותר  שספרינג עושה-משמשת עבורנו איזה שהוא תשתית, איזה שהוא מנוע שמייצר עבורנו אובייקטים 
+באפליקציות דפדפן יש כמות די גדולה של אובייקטים מכל מני סוגים, שיש להם כל מני תפקידים, בעצם אובייקטים מכל מני שכבות של האפליקציה, ואנחנו 
+צריכים מערכתשתיקח על עצמה אחריות על ייצור האובייקטים ובנייה של האוסייקטים כדי שאנחנו לא נתעסק בזה
+spring container - context מבחינת האובייקט זה אובייקט 
+actually this is the object that checks the configuration files - xml or some else file , and
+checks what Beans, what Objects the context will create for us.Then, basically we have all the app objects in that 
+context.
+we will not create the objects with the new keyword , we will define the components, and will use the container
+to get that Beans/objects.to get them and work with them.
+בעצם זאת תשתית שתייצר בשבילנו את האובייקטים
+
+
+
+
 applicationContext.xml - this file is inform the spring context what beans it will have.
 ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml"); 
 
@@ -36,6 +63,9 @@ Spring Bean - An object that is managed by Spring Context.
 התאמה, אחרת עוברים ל 3
 3 .name – אם שם השדה או הפרמטר תואמים לשם של bean כלשהי והסוג מתאים אז זאת
 התאמה. אחרת נזרקת שגיאה.
+
+
+@Qualifier - אומר לספרינג לחפש לפי שם
 
 @Value - סימון שדה או פרמטר בבנאי או פרמטר במתודה שהם פרימיטיבים או סטרינג , ככזה שנרצה שפרינג תזריק - תבצי אלי השמה , מתוך ערך שנמסור לה כטקסט - בדרך כלל מתוך קובץ פרופרטיז
 

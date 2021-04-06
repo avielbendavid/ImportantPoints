@@ -1,0 +1,13 @@
+Spring Boot -  הרחבה של ספרינג , שמקצצת לנו את הקונפיגורציה,מקלה על המתכנתים מאוד
+Spring initializer - יוצרים את הפרוייקט דרך האתר, זה יוצר פרויק מיבן
+
+now, we do not deal with versions of dependencies , spring boot make it.
+
+one version for all the dependencies - can see it in pom.xml file
+
+
+application.properties - the build in property file that comes from spring boot
+pom.xml - modules of dependencies - comes from spring boot - there is no more separate dependencies - now there is modules of concerns 
+Application class - a combination of two things :
+1.configuration class
+2.the main method that runs something

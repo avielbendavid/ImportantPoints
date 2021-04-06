@@ -1,14 +1,68 @@
+בס"ד
+
+Spring will help us write complex java applications
+
+1.object factory - a means for creating objects for us
+2. the objects are managed by Spring in a container - context
+3. managed objects are called managed Beans
+
 ספרינג זו בעצם תשתית שעוזרת לנו ליצור אובייקטים בצורה מאוד מתוחכמת במיוחד ל אפליקציות דפדפן.
 ספרינג זו תשתית שכתובה בשפת ג'אוה בשביל פיתוח אפליקציות בג'אוה.
-וכבר בפנים כוללת כל מני 
-design patterns וצורות נכונות של כתיבה של הקוד באופן שיוריד מהמתכנת הרבה מהעומס
-
+וכבר בפנים כוללת כל מני design patterns וצורות נכונות של כתיבה של הקוד באופן שיוריד מהמתכנת הרבה מהעומס
 
 *******************
-Dependencies - תלויות
-helper class - נקרא גם
+תלויות -  Dependencies
+נקרא גם - helper class
 קלאס אחד שמוכל בתוף קלאס אחר,אובייקט אחד שמוכל בתוך אובייקט אחר
 *******************
+
+מעבר לזה ספרינג גם מבצעת עבורנו את כל העבודה של jdbc, עבודה מול ה -DB מול ה - data base שבעצם מוריד מאיתנו הרבה עבודה
+וגם את כל האובייקטים שנדרשים מאיתנו עבור עבודה של web - כמו למשל servlet וכל ה design patterns של ה MVC - בעצם שרת ולקוח ומה שמחבר ביניהם אז ספרינג עושה חוץ מה view את הכל
+model- המוח של המערכת - בעצם ה coupon system
+view- קוד שכתוב לקליינט בשפת html
+controller-מה שמחבר ביניהם
+אז בעצם בעבר כל העבודה הזו הייתה מסובכת אבל היום בימינו עם ספרינג זה יותר קל והרבה דברים ספרינג עושה לנו בעצמה
+
+ספרינג עושה עבורנו שלושה דברים :
+1. מייצרת עבורנו אובייקטים ומנהלת אותם
+2. עבודה מול jdbc- כל העבודה מול ה db , מול data
+3. כל הנושא של MVC או web, כל הרכיבים שנצטרך עבור web applications.
+
+
+***********************************************************************************************************
+לספרינג שלושה מודולים בסיסיים ביותר : 
+1.Beans
+2.Core
+3.Context 
+מרגע שיש לנו אותם אנחנו יכולים לעשות object factory , לייצר אובייקטים , ולעשות DI-תלויות
+
+אפליקציית Spring בסיסית - חייב את השלוש dependencies האלה : 
+כל ה dependencies האלה נשמרים במחשב כ jar
+כשעושים export למישהו לפרוייקט , נותנים אותו בלי ה jar-ים ולכן הפרוייקט נורא קטן כי יש בו רק טקסט
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.4</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.4</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.3.4</version>
+</dependency>
+***********************************************************************************************************
+
+
 
 
 הדבר העיקרי והבסיסי ביותר  שספרינג עושה-משמשת עבורנו איזה שהוא תשתית, איזה שהוא מנוע שמייצר עבורנו אובייקטים 
@@ -27,9 +81,10 @@ to get that Beans/objects.to get them and work with them.
 
 applicationContext.xml - this file is inform the spring context what beans it will have.
 ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml"); 
+בעצם הסטרינג שבסוגריים זה שם של קובת שנמצא על ה root, על ה classPath
 
 
-**************************** XML ****************************
+**************************** XML ***************************************************************************
 
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -39,9 +94,16 @@ ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applica
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-</beans> 
 
-*************************************************************
+!!!  כאן יוגדרו כל ה Beans שאנחנו רוצים שספרינג תייצר לנו   !!!
+
+prototype- אב טיפוס 
+important comment** - when we define a bean - by default it is singleton, but there is a way also 
+to make it prototype
+
+
+</beans> 
+************************************************************************************************************
 
 
 Spring Bean - An object that is managed by Spring Context.
@@ -63,9 +125,6 @@ Spring Bean - An object that is managed by Spring Context.
 התאמה, אחרת עוברים ל 3
 3 .name – אם שם השדה או הפרמטר תואמים לשם של bean כלשהי והסוג מתאים אז זאת
 התאמה. אחרת נזרקת שגיאה.
-
-
-@Qualifier - אומר לספרינג לחפש לפי שם
 
 @Value - סימון שדה או פרמטר בבנאי או פרמטר במתודה שהם פרימיטיבים או סטרינג , ככזה שנרצה שפרינג תזריק - תבצי אלי השמה , מתוך ערך שנמסור לה כטקסט - בדרך כלל מתוך קובץ פרופרטיז
 
